@@ -1,0 +1,101 @@
+.about__paragraph {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	color: #FFFFFF;
+}
+
+
+.about__paragraph:not(:last-child) {
+	margin-bottom: 30px;
+}
+.about__paraspan {
+	display: block;
+}
+
+
+.about__quote {
+	margin-bottom: 39px;
+	font-size: 44px;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	position: relative;
+	padding-left: 44px;
+}
+.about__subquote {
+	display: inline-block;
+}
+
+.about__quote::before {
+	content:"“";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #6C0287; 
+	position: absolute;
+	left:0;
+	
+}
+
+.about__quote::after{
+	content:" ” ";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 50px;
+	color: #6C0287;
+	position: absolute;
+	right: 98px;
+	bottom: 0;
+	
+}  
+
+.about__refer {
+	position: relative;
+}
+
+.about__blockquote {
+	padding-left: 120px;
+}
+
+.about__cite {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	color: #FFFFFF;
+}
+
+.about__refer::before{
+	display: block;
+	content: "";
+	background: url("../img/pictures/images/Arkasha.jpg");
+	background-size: cover;
+	background-position: top center;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 30px;
+
+}
+
+.about__text {
+	margin-bottom: 48px;
+	
+}
+
+.about__contenttext {
+	display: inline-block;
+	max-width: 500px;
+
+}
+
+.about__contentimg {
+	margin-right: 80px;
+	cursor: pointer;
+	float: left;
+}

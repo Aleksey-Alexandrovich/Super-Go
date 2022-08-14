@@ -1,0 +1,51 @@
+.hall{
+	padding-bottom: 100px;
+}
+
+
+.hall__text{
+	text-align: center;
+	cursor: pointer;
+  margin: 0 auto;
+	max-width: 252px;
+	
+}
+.hall__list{
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 80px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+
+}
+
+.hall__item:first-child {
+	margin-bottom: 20px;
+}
+
+.hall__item{
+	width: 580px;
+	min-height: 349px;
+	padding-top: 94px;
+	display: inline-block;
+
+}
+
+
+.hall__item--bg--neon{
+	background-image: url("../img/pictures/images/Neon.png");
+	background-size: cover;
+}
+.hall__item--bg--star{
+	background-image: url("../img/pictures/images/starW.png");
+	background-size: cover;
+}
+.hall__item--bg--vibe{
+	background-image: url("../img/pictures/images/Vibe.png");
+	background-size: cover;
+}
+.hall__item--bg--wild{
+	background-image: url("../img/pictures/images/WildW.png");
+	background-size: cover;
+}
+

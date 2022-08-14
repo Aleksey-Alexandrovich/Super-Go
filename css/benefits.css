@@ -1,0 +1,61 @@
+.page__title--size--m {
+	display: block;
+	margin-bottom: 0;
+}
+
+.benefits{
+	
+}
+
+.benefits__link{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	color: #FFFFFF;
+}
+.benefits__row{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px 20px;
+
+}
+
+.benefits__item{
+	flex-basis: 380px;
+	min-height: 228px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	padding-left: 40px;
+	padding-bottom: 34px;
+	
+}
+.benefits__link--position--down {
+	margin-bottom: -26px;
+}
+
+
+.benefits__item--theme--vr {
+	background-image: url("../img/figure/vrglasses.png");
+	
+
+}
+
+.benefits__item--theme--audio {
+	background-image: url("../img/figure/audio.png");
+}
+
+.benefits__item--theme--cinema {
+	background-image: url("../img/figure/netflix.png");
+}
+.benefits__item--theme--karaoke {
+	background-image: url("../img/figure/micro.png");
+}
+.benefits__item--theme--playstation {
+	background-image: url("../img/figure/sony.png");
+}
+.benefits__item--theme--games {
+	background-image: url("../img/figure/game.png");
+}

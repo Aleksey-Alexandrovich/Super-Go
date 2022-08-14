@@ -1,0 +1,99 @@
+
+.promo__bg{
+	background-image: url("../img/pictures/images/vr-glasses.png");
+	background-repeat: no-repeat;
+	min-height: 823px;
+	background-position: bottom right;
+}
+.promo{
+	padding-top: 50px;
+	position: relative;
+}
+.promo__subtitle{
+	font-size: 28px;
+	padding-left: 100px;
+	color: #FFFFFF;
+	margin-bottom: 30px;
+}
+.promo__title{
+	font-weight: 900;
+	font-size: 150px;
+	letter-spacing: -0.1em;
+	color: #FFFFFF;
+}
+
+.promo__description {
+	font-weight: 900;
+	
+  color: #CD06FF;
+	text-align: center;
+}
+
+.promo__text {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+.promo__features{
+	display: flex;
+	gap: 40px;
+	margin-bottom: 150px;
+
+}
+.promo__item{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.promo__item--width-max {
+	max-width: 193px;
+	font-size: 100px;
+	line-height: 141px
+}
+
+.promo__item--width--min {
+	max-width: 174px;
+	font-size: 75px;
+	line-height: 106px;
+	font-variant: small-caps;
+	padding-top: 35px;
+}
+
+.promo__button {
+	cursor: pointer;
+	background: #6C0287;
+	border-radius: 10px;
+	padding: 25px 69px;
+	min-height: 80px;
+	max-width: 374px;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.promo__button:hover {
+	color: #6C0287;
+	background-color: #fff;
+}
+
+
+
+.promo__down {
+	position: relative;
+	display: block;
+	min-height: 97px;
+	
+}
+
+.promo__svg {
+	position: absolute;
+	bottom: 48px;
+	right: 510px;
+	
+}
