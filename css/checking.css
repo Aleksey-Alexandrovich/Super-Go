@@ -130,7 +130,6 @@ fieldset {
 	margin-bottom: 67px;
 }
 
-
 .custom-radio--type--checkbox+label::before {
   content: '';
   width: 25px;
@@ -152,7 +151,17 @@ fieldset {
 
 .form__time {
 	min-height: 52px;
-	
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+	line-height: 28px;
+	color: #211E1E;
+}
+
+input[type=number]::placeholder {
+	font-size: 18px;
+	line-height: 28px;
+	color: #211E1E;
 }
 
 .form__time--size-s {
