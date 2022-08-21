@@ -14,8 +14,16 @@
 }
 
 .purple:hover {
-	color: #CD06FF;
+	color:#EADEED;
 }
+.purple:focus {
+	color:#EADEED
+}
+.purple:active {
+	color:#CD06FF;
+}
+
+
 .fiolet {
 	color: #CD06FF;
 }

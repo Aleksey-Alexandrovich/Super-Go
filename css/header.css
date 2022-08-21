@@ -10,16 +10,28 @@
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-
 	height: 55px;
 	min-width: 280px;
-
 	border: 3px solid #CD06FF;
 	border-radius: 10px;
-	background-color: #000000;
-	
-
+	background: transparent;
 }
+.nav__button:hover {
+	background: #6C0287;
+}
+
+.nav__button:focus {
+	background: #6C0287;
+}
+
+.nav__button:active {
+	background: #640AA3;
+}
+
+
+
+
+
 
 .nav__link{
 	font-size: 22px;

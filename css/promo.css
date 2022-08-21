@@ -73,8 +73,6 @@
 
 
 
-
-
 .promo__button {
 	cursor: pointer;
 	padding: 25px 69px;
@@ -85,33 +83,94 @@
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-
 	background: #6C0287;
-	border: 1px solid #000000;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
-
+	outline: transparent;
 }
 
 .promo__button:hover {
-	color: #6C0287;
-	background-color: #fff;
+	background: #840AA3;
+}
+.promo__button:focus {
+	background: #840AA3;
+}
+
+.promo__button:active {
+	background: #640AA3;
+	
 }
 
 
 
-.promo__down {
+
+
+.promo__button--for--form:hover {
+	background: #EADEED;
+	border: 3px solid #6C0287;
+}
+
+.promo__button--for--form:focus {
+	background: #FFFFFF;
+	border: 3px solid #6C0287;
+}
+
+.promo__button--for--form:active {
+	background: #EADEED;
+}
+
+
+.promo__wrapper {
 	position: relative;
-	display: block;
+
+}
+
+
+.promo__down::after{
+	content: "";
+	background-image: url("../img/icon/firstdown.svg");
+
+	width: 97px;
 	min-height: 97px;
-	max-width: 97px;
-	margin: 0 auto;
+	position: absolute;
+	top:-40px;
+	left: 568px;
+	
+}
+.promo__down:hover::after {
+	background-image: url("../img/icon/whiteelipseee.svg");
+}
+
+.promo__down:focus::after {
+	background-image: url("../img/icon/squaremain.svg");
+	background-size: cover;
+} 
+
+.promo__down:active::after{
+
+	background-image: url("../img/icon/downdeep.svg");
+
+}
+
+
+
+
+
+
+
+.promo__svg:hover {
+
+	fill:#FFFFFF;
+	stroke: #6C0287;
 	
 }
 
-.promo__svg {
-		position: absolute;
-    bottom: 38px;
-    right: -28px;
+.promo__svg:focus {
+	fill: yellow;
 }
+
+.promo__svg:active {
 	
+	fill: #CD06FF;
+	stroke: #FFFFFF;
+} 
