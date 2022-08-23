@@ -12,11 +12,10 @@
 	color: #FFFFFF;
 	height: 55px;
 	min-width: 280px;
+	border: 3px solid #CD06FF ;
 	border-radius: 10px;
-	background: #CD06FF;
-	border: none;
-	outline: none;
-	list-style-type: none;
+	background: transparent;
+	
 }
 .nav__button:hover {
 	background: #6C0287;
