@@ -18,9 +18,6 @@ input[type=radio] {
 	opacity: 0;
 }
 
-.form__radio:checked + label {
-	color: #640AA3;
-}
 
 .form__title {
 	margin-bottom: 40px;
@@ -58,6 +55,7 @@ input[type=radio] {
 .form__item:active {
 	background: #6C0287;
 	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
 }
 
 
@@ -109,6 +107,21 @@ input[type=radio] {
 	background-color: #FFFFFF;
 }
 
+.custom-radio--type--radio+label:focus::after {
+	content: "";
+	width: 33px;
+  height: 33px;
+	outline: 1px solid #CD06FF;
+  border-radius:0%;
+}
+
+.custom-radio--type--checkbox+label::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius:0%;
+}
+
 
 
 
@@ -121,12 +134,13 @@ input[type=radio] {
 .custom-radio:checked+label::before {
   /* border-color: #0b76ef;
   background-color: #4fef0b; */
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='black' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='black' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); */
 }
 
 .custom-radio:focus+label::before {
 
-  outline: 2px solid #CD06FF;
+  outline: 1px solid #CD06FF;
+	outline-offset: 3px;
 	
 }
 
@@ -139,12 +153,6 @@ input[type=radio] {
 
 
 
-.custom-radio--type--checkbox+label::before {
-  content: '';
-  width: 25px;
-  height: 25px;
-  border-radius:0%;
-}
 
 
 
@@ -277,5 +285,3 @@ input[type=number]::placeholder {
 .clearfix {
 	clear: both;
 }
-
-

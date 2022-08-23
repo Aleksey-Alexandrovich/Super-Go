@@ -40,9 +40,6 @@
 	color: #FFFFFF;
 }
 
-.nav__link:hover {
-	color: #CD06FF;
-}
 
 .nav__list{
 	display: flex;

@@ -17,7 +17,9 @@
 	color:#EADEED;
 }
 .purple:focus {
-	color:#EADEED
+	color:#EADEED;
+	outline: 1px solid #CD06FF;
+	
 }
 .purple:active {
 	color:#CD06FF;
