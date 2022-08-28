@@ -5,6 +5,7 @@
   padding: 20px 70px;
   margin-bottom: 20px;
   line-height: 46px;
+	
 }
 
 
@@ -33,6 +34,8 @@
   width: 46px;
   height: 46px;
   float: right;
+	transition-duration: 0.3s;
+	transition-property: background;
 }
 
 .questions__item:nth-child(even):after {

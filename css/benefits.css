@@ -25,7 +25,13 @@
 	padding: 166px 40px 34px 40px;
 	padding-left: 40px;
 	padding-bottom: 34px;
+	transition-duration: 0.4s;
+	transition-property: transform;
 	
+}
+
+.benefits__item:hover {
+	transform:scale(1.1);
 }
 
 
