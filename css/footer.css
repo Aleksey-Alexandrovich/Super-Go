@@ -128,4 +128,5 @@ footer {
 	display: inline-block;
 	padding-top: 6px;
 	padding-left: 20px;
+	cursor: pointer;
 }

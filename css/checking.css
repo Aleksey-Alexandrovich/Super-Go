@@ -14,7 +14,7 @@ fieldset {
 
 }
 
-input[type=radio] {
+.form__radio {
 	opacity: 0;
 }
 
@@ -80,14 +80,21 @@ input[type=radio] {
 
 .formboxes {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+
 }
+
+
 .formboxes__item {
 	font-size: 22px;
 	line-height: 25px;
 	color: #FFFFFF;
 	display: flex;
+	align-items:flex-start;
 	flex-direction: column;
+	
+
+
 }
 
 .formboxes__title {
@@ -98,16 +105,20 @@ input[type=radio] {
 	margin-bottom: 23px;
 
 }
-.custom-radio {
-	position: absolute;
-  z-index: -1;
-  opacity: 0;
-	
+
+
+
+.custom-radio{
+	display: none;
+  
 }
+
+
+
 .custom-radio+label {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
-	user-select: none;
+	user-select: none; 
 }
 
 
@@ -144,7 +155,12 @@ input[type=radio] {
 
 
 
+.formboxes__label {
+	cursor: pointer;
+	
 
+	
+}
 
 
 .formboxes__label:not(:last-child) {
@@ -207,13 +223,13 @@ input[type=number]::placeholder {
 	color: #211E1E;
 }
 
-.form__time--size-s {
-	width: 134px;
-}
+
 
 .form__time--size-s{
 	margin-right: 32px;
 	margin-bottom: 36px;
+	cursor: pointer;
+	width: 134px;
 }
 .form__time--size-s:last-child{
 	margin-bottom: 0;
@@ -231,15 +247,19 @@ input[type=number]::placeholder {
 .form__time--size-m{
 	margin-right: 0;
 	width: 134px;
+	cursor: pointer;
+
 }
 .form__time--size-xl {
 	width: 300px;
 	margin-bottom: 14px;
+
 }
 
 .form__time--size-l {
 	width: 280px;
 	margin-bottom: 14px;
+	
 	
 }
 
@@ -305,4 +325,13 @@ input[type=number]::placeholder {
 }
 .clearfix {
 	clear: both;
+}
+
+.formboxes__wrapper {
+	display: flex;
+	
+}
+
+.formboxes__wrapper:not(:last-child) {
+	margin-bottom: 20px;
 }

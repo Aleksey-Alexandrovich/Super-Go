@@ -21,15 +21,19 @@
 	
 }
 .nav__button:hover {
+	border:none;
 	background: #6C0287;
 }
 
 .nav__button:focus {
 	background: #6C0287;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .nav__button:active {
 	background: #640AA3;
+	border: none;
 }
 
 
@@ -42,6 +46,12 @@
 	line-height: 50px;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	transition-duration: 0.2s;
+	transition-property: color;
+}
+
+.nav__link:hover {
+	color: #CD06FF;
 }
 
 
