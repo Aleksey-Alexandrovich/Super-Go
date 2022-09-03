@@ -1,9 +1,15 @@
 
 .footer__social {
-	height: 50px;
+	
 	display: inline-flex;
 
 }
+
+.footer__item {
+	
+}
+
+
 
 .footer__item:not(:last-child) {
 	margin-right: 27px;
@@ -13,6 +19,10 @@
 	color:#FFFFFF;
 	transition-duration: 0.2s;
 	transition-property: color;
+	width: 50px;
+	height: 50px;
+	display: block;
+	
 }
 
 .purple:hover {
@@ -33,6 +43,13 @@
 
 .footer__link {
 	color: #FFFFFF;
+	transition-duration: 0.2s;
+	transition-property: color;
+}
+
+.footer__link:hover {
+	color: #CD06FF;
+
 }
 
 .footer {
@@ -56,11 +73,15 @@ footer {
 	color: #FFFFFF;
 	margin-bottom: 39px;
 }
+
 .footer__contact {
 	position: relative;
 	max-width: 300px;
 	padding-left: 60px;
 }
+
+
+
 
 .footer__contact_type_address {
 	margin-bottom: 38px;
@@ -80,6 +101,7 @@ footer {
 	top: 50%;
 	transform: translateY(-50%);
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 .footer__contact_type_address::before {
@@ -129,4 +151,10 @@ footer {
 	padding-top: 6px;
 	padding-left: 20px;
 	cursor: pointer;
+	transition-duration: 0.2s;
+	transition-property: color;
+}
+
+.copyright__short:hover {
+	color:#CD06FF;
 }
