@@ -24,8 +24,7 @@
 
 .promo__description {
 	font-weight: 900;
-	
-  color: #CD06FF;
+  color: var(--icon-color);
 	text-align: center;
 }
 

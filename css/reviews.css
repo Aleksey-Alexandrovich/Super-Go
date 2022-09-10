@@ -21,6 +21,7 @@
 	height: 280px;
 	border-radius: 50%;
 	object-fit: cover;
+
 	
 }
 
@@ -50,7 +51,20 @@
 .reviews__figure {
 	float: left;
 	margin-right: 20px;
-	
+	position: relative;
+}
+
+.reviews__figure::after {
+	content: "";
+	display: block;
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	position: absolute;
+	top:0;
+	left:0;
+	background: transparent;
+	background-image: var(--radial-gradientOne);
 }
 
 .reviews__text {

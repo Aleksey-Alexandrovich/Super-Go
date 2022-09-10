@@ -1,3 +1,4 @@
+@import "var.css";
 @import "normalize.css";
 @import "global.css";
 @import "promo.css";
@@ -9,3 +10,4 @@
 @import "reviews.css";
 @import "header.css";
 @import "benefits.css";
+

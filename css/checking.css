@@ -1,6 +1,6 @@
 
 .checking {
-	background: #440F51;
+	background: var(--main-color);
 }
 
 fieldset {
