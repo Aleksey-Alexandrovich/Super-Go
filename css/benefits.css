@@ -50,17 +50,19 @@
 }
 
 .benefits__item--theme--audio {
-	transform: translate(0px , 64px);
+	position: relative;
+	bottom: -64px;
 	background-image: url("../img/figure/audio.png");
 	
 	
 }
 
 .benefits__item--theme--cinema {
-	transform: translate(0px , 72px);
+	position: relative;
+	bottom: -72px;
 	background-image: url("../img/figure/netflix.png");
-	
 }
+
 .benefits__item--theme--karaoke {
 	background-image: url("../img/figure/micro.png");
 }
