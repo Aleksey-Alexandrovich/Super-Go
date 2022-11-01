@@ -1,14 +1,36 @@
 
-.promo__bg{
+.promo {
+	padding-top: 50px;
+	position: relative;
+	min-height: 823px;
+}
+
+
+.container__bg:after{
+	display: block;
+	content: "";
+	background-image: url("../img/pictures/images/vr-glasses.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 672px;
+	height: 762px;
+	top: 80px;
+  right: 31px;
+	position: absolute;
+	z-index: 1;
+	
+
+}
+
+/* .promo__bg{
 	background-image: url("../img/pictures/images/vr-glasses.png");
 	background-repeat: no-repeat;
 	min-height: 823px;
 	background-position: bottom right;
 }
-.promo{
-	padding-top: 50px;
-	position: relative;
-}
+ */
+
+
 .promo__subtitle{
 	font-size: 28px;
 	padding-left: 100px;
@@ -124,6 +146,7 @@
 
 .promo__wrapper {
 	position: relative;
+	z-index: 2;
 
 }
 
@@ -131,34 +154,31 @@
 .promo__down::after{
 	content: "";
 	background-image: url("../img/icon/firstdown.svg");
-
+	background-repeat: no-repeat;
 	width: 97px;
-	min-height: 97px;
+	height: 97px;
 	position: absolute;
 	top:-40px;
 	left: 568px;
-	transition-duration: 0.2s;
-	transition-property: background;
+	transition-duration: 0.4s;
+	z-index: 3;
 	
 }
 .promo__down:hover::after {
 	background-image: url("../img/icon/whiteelipseee.svg");
+	transition-duration: 0.4s ;
 }
 
 .promo__down:focus::after {
 	background-image: url("../img/icon/squaremain.svg");
-	background-size: cover;
+	transition-duration: 0.4s;
 } 
 
 .promo__down:active::after{
 
 	background-image: url("../img/icon/downdeep.svg");
-
+	transition-duration: 0.4s;
 }
-
-
-
-
 
 
 
@@ -177,4 +197,222 @@
 	
 	fill: #CD06FF;
 	stroke: #FFFFFF;
-} 
+}
+
+@media(max-width:1242px) {
+
+	.promo {
+		min-height: unset;
+	}
+
+
+	.promo__title {
+		font-size: 120px;
+	}
+
+	.promo__subtitle {
+		font-size: 22px;
+		line-height: 30px;
+
+	}
+
+	.promo__item--width-max {
+		font-size: 80px;
+		line-height: 113px;
+
+	}
+
+	.promo__item--width--min {
+		font-size: 60px;
+		line-height: 85px;
+	}
+
+
+	.promo__text {
+		font-size: 26px;
+		line-height: 30px;
+	}
+
+	.promo__button {
+		font-size: 22px;
+		max-width: 296px;
+		padding: 17px 48px;
+		min-height: 64px;
+	}
+
+	
+	
+	.container__bg:after {
+			width: 453px;
+			height: 520px;
+			top: 71px;
+    	right: 39px;
+	
+		
+	
+	} 
+
+	.promo__features {
+		margin-bottom: 80px;
+	}
+
+	.promo__down::after {
+		background-image: url("../img/icon/down1024.svg");
+		width: 67px;
+    height: 67px;
+		top: -42px;
+    left: 385px;
+
+	}
+
+	.promo__down:hover::after {
+		background-image: url("../img/icon/whiteelipseee.svg");
+		background-size: cover
+	}
+	
+	.promo__down:focus::after {
+		background-image: url("../img/icon/squaremain.svg");
+		background-size: cover;
+	} 
+	
+	.promo__down:active::after{
+	
+		background-image: url("../img/icon/downdeep.svg");
+		background-size: cover
+	}
+	
+
+}
+
+@media(max-width: 992px) {
+
+	.promo__item--width-max {
+		max-width:170px;
+	}
+
+
+
+	.container__bg:after{
+		width: 409px;
+		height: 479px;
+		top: 57px;
+    right: 40px
+	
+
+}
+
+	.promo__features {
+		gap:20px
+	}
+
+	.promo__title {
+		font-size: 86px;
+		line-height: 100%;
+	}
+	.promo__subtitle {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.promo__button {
+		max-width: 214px;
+		padding: 11px 35px 11px 35px;
+		min-height: 46px;
+		font-size: 16px;
+	
+	}
+
+
+
+
+}
+
+
+@media(max-width: 767px) {
+	.promo__wrapper {
+		display: none;
+	}
+
+
+
+}
+
+@media(max-width: 740px) {
+
+	.promo {
+		padding-bottom: 0;
+	}
+
+
+	.promo__title {
+		font-size: 35px;
+		line-height: 100%;
+	}
+
+	.promo__subtitle {
+		font-size: 10px;
+		line-height: 14px;
+		padding-left: 21px
+
+	}
+	.promo__item--width-max {
+		font-size: 26px;
+		line-height: 37px;
+		max-width: 73px;
+
+	}
+	.promo__item--width--min {
+		font-size: 22px;
+		line-height: 31px;
+		padding-top: 6px;
+		max-width: 73px;
+	}
+
+
+
+	.promo__text {
+		font-size: 10px;
+		line-height: 11px;
+	}
+
+	.container__bg:after {
+		
+		width: 152px;
+    height: 173px;
+    top: 23px;
+    right: 17px;
+
+
+
+	}
+
+	.promo__button {
+		border-radius: 4px;
+
+		max-width: 117px;
+    padding: 8px 13px 8px 13px;
+    min-height: 27px;
+    font-size: 10px;
+		line-height: 12px;
+
+
+
+
+	}
+
+	.promo__features {
+		margin-bottom: 30px;
+		gap: 7px;
+	}
+
+
+
+}
+
+
+
+/* .promo__button {
+	max-width: 117px;
+	padding: 8px 13px 8px 13px;
+	min-height: 27px;
+	font-size: 10px; */

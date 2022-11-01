@@ -5,9 +5,6 @@
 
 }
 
-.footer__item {
-	
-}
 
 
 
@@ -53,15 +50,13 @@
 }
 
 .footer {
-	min-height: 365px;
+	min-height: 100vh;
 	position: relative;
 	padding: 50px 0;
-
-}
-
-footer {
 	background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+
 }
+
 
 /*-----------------------------------------------*/
 .footer__contacts {
@@ -157,4 +152,159 @@ footer {
 
 .copyright__short:hover {
 	color:#CD06FF;
+}
+
+@media (max-width:1240px) {
+
+	.footer-box__img {
+		object-fit: cover;
+		max-width: 542px;
+		min-height: 274px;
+	}
+	
+	.footer-box {
+    gap: 58px;
+    margin-bottom: 92px;
+	}
+
+	.footer__contacts {
+		max-width: 300px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 39px;
+}
+
+	.page__title--reset--padding {
+		margin-bottom: 26px;
+	}
+
+	.footer__contact {
+    
+		padding-left: 46px;
+
+}
+
+	.footer__item >a >svg {
+	width: 38.4px;
+	height:38.4px;
+}
+
+	.purple { 
+    width: 40px;
+    height: 40px;
+  
+	}
+	.footer__item:not(:last-child) {
+		margin-right: 26px;
+	}
+
+
+}
+
+ @media(max-width: 992px) {
+	
+	.footer-box {
+		max-width: 744px;
+		margin: 0 auto;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-box__img {
+		max-width: 688px;
+    min-height: 337px;
+		
+	}
+	
+	.footer__contact_type_address {
+		margin-bottom: 27px;
+		text-align: center;
+	}
+
+
+
+	.footer--mode--adaptive {
+		display: block;
+	}
+
+	.footer__contact_type_phone {
+		text-align: center;
+		margin-bottom: 27px;
+	}
+
+		.footer__contact_type_address::before {
+		left: 81px;
+    top: 7px;
+
+	}
+
+	.footer__social {
+		display: flex;
+		justify-content: center;
+	}
+
+	.copyright {
+		max-width: 688px;
+		margin: 0 auto;
+
+	}
+
+	.footer-box__map {
+		margin-bottom: 75px;
+	}
+
+
+} 
+
+
+@media(max-width: 740px) {
+	.footer__contacts {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.footer-box__img {
+		max-width: 280px;
+    min-height: 194px;
+	}
+
+	.footer-box__text {
+		display: flex;
+    flex-direction: column;
+    align-items: baseline;
+	}
+
+	.footer__contact_type_address {
+		margin-bottom: 10px;
+	}
+	.footer__contact_type_phone {
+		margin-bottom: 10px;
+	}
+
+	.footer__contact_type_address::before {
+    left: 52px;
+    top: 0px;
+}
+
+	.copyright {
+	max-width: unset;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	}
+	.copyright__time {
+		margin-bottom: 19px;
+		text-align: center;
+	}
+	.copyright__short {
+		padding-top: 5px;
+    padding-left: unset;
+		
+	}
+
+	
+
 }

@@ -2,17 +2,19 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+	
   <link rel="icon" type="image/svg+xml" href="img/icon/logo.png">
   <link rel="icon" type="image/png" href="img/icon/logo.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Модуль 2 Урок 10</title>
 </head>
 <body class="page">
-	<header class="header">
+  <header class="header">
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__logo">
-				<svg width="120" height="66" viewbox="0 0 120 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<svg width="120" height="66" viewbox="0 0 120 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="header--svg--none">
 					<path d="M39.6553 40.0361V32.5898H56.7451V47.8486C53.4736 50.0785 50.5765 51.6003 48.0537 52.4141C45.5472 53.2116 42.5687 53.6104 39.1182 53.6104C34.8701 53.6104 31.4033 52.8861 28.7178 51.4375C26.0485 49.9889 23.9733 47.8324 22.4922 44.9678C21.0273 42.1032 20.2949 38.8154 20.2949 35.1045C20.2949 31.1982 21.1006 27.8047 22.7119 24.9238C24.3232 22.0267 26.6833 19.8294 29.792 18.332C32.2171 17.1764 35.4805 16.5986 39.582 16.5986C43.5371 16.5986 46.4912 16.9567 48.4443 17.6729C50.4137 18.389 52.0413 19.5039 53.3271 21.0176C54.6292 22.515 55.6058 24.4193 56.2568 26.7305L45.5879 28.6348C45.1484 27.2839 44.3997 26.2503 43.3418 25.5342C42.3001 24.818 40.9655 24.46 39.3379 24.46C36.9128 24.46 34.9759 25.3063 33.5273 26.999C32.0951 28.6755 31.3789 31.3366 31.3789 34.9824C31.3789 38.8561 32.1032 41.623 33.5518 43.2832C35.0166 44.9434 37.0511 45.7734 39.6553 45.7734C40.8923 45.7734 42.0723 45.5944 43.1953 45.2363C44.3184 44.8783 45.6042 44.2679 47.0527 43.4053V40.0361H39.6553Z"/>
 					<path d="M61.9209 35.1289C61.9209 29.2858 63.5485 24.7367 66.8037 21.4814C70.0589 18.2262 74.5918 16.5986 80.4023 16.5986C86.3594 16.5986 90.9492 18.2018 94.1719 21.4082C97.3945 24.5983 99.0059 29.0742 99.0059 34.8359C99.0059 39.0189 98.2979 42.4531 96.8818 45.1387C95.4821 47.8079 93.4476 49.8913 90.7783 51.3887C88.1253 52.8698 84.8132 53.6104 80.8418 53.6104C76.8053 53.6104 73.4606 52.9674 70.8076 51.6816C68.1709 50.3958 66.0306 48.3613 64.3867 45.5781C62.7428 42.7949 61.9209 39.3118 61.9209 35.1289ZM72.9805 35.1777C72.9805 38.791 73.6478 41.387 74.9824 42.9658C76.3333 44.5446 78.1644 45.334 80.4756 45.334C82.8519 45.334 84.6911 44.5609 85.9932 43.0146C87.2952 41.4684 87.9463 38.6934 87.9463 34.6895C87.9463 31.3203 87.2627 28.8626 85.8955 27.3164C84.5446 25.7539 82.7054 24.9727 80.3779 24.9727C78.1481 24.9727 76.3577 25.762 75.0068 27.3408C73.6559 28.9196 72.9805 31.5319 72.9805 35.1777Z"/>
 					<path d="M0 34H1V66H0V34Z" fill="#CD06FF"/>
@@ -31,14 +33,18 @@
 					</ul>
 				</nav>
 				<button type="button" class="nav__button">Заказать звонок</button>
+				<svg width="54" height="29" viewbox="0 0 54 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__svg visually">
+					<rect width="54" height="5" rx="2" fill="#6C0287"/>
+					<rect y="12" width="54" height="5" rx="2" fill="#6C0287"/>
+					<rect y="24" width="31" height="5" rx="2" fill="#6C0287"/>
+				</svg>
+					
 			</div>
 		</div>
-	</header>
-
-
+	</header> 
 	<main class="main">
 		<section class="promo">
-			<div class="container promo__bg">		
+			<div class="container container__bg">		
 				<h1 class="promo__title">GAME OVER</h1>
 				<p class="promo__subtitle">Новый формат игр и отдыха</p>
 				
@@ -58,26 +64,26 @@
 					<a href="#benefits" class="promo__down"></a>
 			</div>
 			</div>
-		</section> 
-	
-		<section class="benefits" id="benefits">
+		</section>
+		 
+	  <section class="benefits" id="benefits">
 			<div class="container">
-				<h2 class="page__title"><span class="page__title page__title--size--m">У нас есть все для классного</span> отдыха с друзьями!</h2>
+				<h2 class="page__title page__title--adaptive"><span class="page__title page__title--size--m">У нас есть все для классного</span>отдыха с друзьями!</h2>
 				<div class="benefits__row">
 					<div class="benefits__item benefits__item--theme--vr">
 						<a href="#" class="benefits__link">VR очки</a>
 					</div>
 					<div class="benefits__item benefits__item--theme--audio">
-						<a href="#" class="benefits__link ">Аудио-система 5.1 с отличным звуком</a>
+						<a href="#" class="benefits__link benefits__link--audio">Аудио-система 5.1 с отличным звуком</a>
 					</div>
 					<div class="benefits__item benefits__item--theme--karaoke">
-						<a href="#" class="benefits__link ">Караоке (4 микрофона)</a>
+						<a href="#" class="benefits__link">Караоке (4 микрофона)</a>
 					</div>
 					<div class="benefits__item benefits__item--theme--games">
-						<a href="#" class="benefits__link ">Настольные игры</a>
+						<a href="#" class="benefits__link">Настольные игры</a>
 					</div>
 					<div class="benefits__item benefits__item--theme--cinema">
-						<a href="#" class="benefits__link">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</a>
+						<a href="#" class="benefits__link benefits__link--film">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</a>
 					</div>
 					<div class="benefits__item benefits__item--theme--playstation">
 						<a href="#" class="benefits__link">РlаyStаtiоn 5</a>
@@ -86,9 +92,9 @@
 			</div>
 		</section>
 			
-		<section class="hall">
+		 <section class="hall">
 			<div class="container">
-				<h2 class="page__title" id="halls">Наши залы</h2>
+				<h2 class="page__title page__title--size--l" id="halls">Наши залы</h2>
 				<ul class="hall__list"> 
 					<li class="hall__item hall__item--bg--vibe">
 						<p class="hall__text">80’s vibes</p>
@@ -105,11 +111,11 @@
 				</ul>
 			</div>
 		</section>
-			
+		
 	
 		<section class="checking" id="checking">
-		<div class="container">
-			<h2 class="page__title">Забронировать зал просто</h2>
+		<div class="container checking__container">
+			<h2 class="page__title page__title--form">Забронировать зал просто</h2>
 	
 			<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form" id="data">
 				<h2 class="form__title">Выбери зал</h2>
@@ -158,7 +164,7 @@
 							<label for="Alias" class="formboxes__label">Alias</label>
 						</div>
 	
-						<div class="formboxes__item">
+						<div class="formboxes__item lastt-child">
 							<h2 class="formboxes__title">Дополнительно</h2>
 							<input type="checkbox" class="custom-radio custom-radio--type--checkbox" id="karaoke" name="additionally" value="Караоке">
 							<label for="karaoke" class="formboxes__label">Караоке</label>
@@ -172,50 +178,52 @@
 				<fieldset class="form__date">
 					<legend class="form__title">Выберите дату и время</legend>
 					<div class="form-row">
-						<div class="form-row__item">
+						<div class="form-row__item form--order--minus">
 							<input type="date" class="form__time form__time--size-s" required name="date" placeholder="Дата">
 							<input type="time" class="form__time form__time--size-m" required name="time" placeholder="Время">
-							<input type="number" class="form__time form__time--size-xl" required name="number" placeholder="Сколько человек">
+							<input type="number" class="form__time form__time--size-x opacity" required name="number" placeholder="Сколько человек">
 						</div>
-						<div class="form-row__item">
+						<div class="form-row__item form--order--first">
 						<div class="special-wrapper">
-								<label for="first-name" class="form-row__labels">Имя</label>
-								<input type="text" class="form__time form__time--size-l" id="first-name" required name="first-name">
+							<label for="first-name" class="form-row__labels">Имя</label>
+							<input type="text" class="form__time form__time--size-l" id="first-name" required name="first-name">
 						
 							<label for="last-name" class="form-row__labels">Фамилия</label>
 							<input type="text" class="form__time form__time--size-l form__time--margin-zero" id="last-name" required name="last-name">
-							</div>
 						</div>
-						<div class="form-row__item">
+						</div>
+						<div class="form-row__item form-order--zero">
 							<div class="special-wrapper">
 								<label for="tel" class="form-row__labels">Телефон</label>
 								<input type="tel" class="form__time form__time--size-xl" required name="tel" id="tel">
-								<label for="E-mail" class="form-row__labels">E-mail</label>
-								<input type="email" class="form__time form__time--size-xl" required name="email" id="E-mail">
+								<label for="E-mail" class="form-row__labels form--trans">E-mail</label>
+								<input type="email" class="form__time form__time--size-xl form--trans" required name="email" id="E-mail">
+								<input type="number" class="form__time form__time--size-x opa" required name="number" placeholder="Сколько человек">
 						</div>
 						</div>
 					</div>
-				<div class="form__btn-wrapper">	<button type="submit" class="form__button">Забронировать</button></div>
-				<div class="clearfix"></div>
+					<div class="form__btn-wrapper">	<button type="submit" class="form__button">Забронировать</button></div>
+					<div class="clearfix"></div>
 				</fieldset>
 			</form>
 		</div>
 		</section>
+
 	
-	
-		
 		<section class="about" id="aboutus">
 			<div class="container">	
 				<h2 class="page__title">О нас</h2>
 			
 			<div class="about__contentbox">
 				<div class="about__contentimg">
-					<img src="img/pictures/images/halls.png" alt="Залы">
+					<img src="img/pictures/images/halls.png" class="about__image" alt="Залы">
+					
 				</div>
 				<div class="about__contenttext">
 					<div class="about__text">
 						<p class="about__paragraph">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной
-							части города.</p>
+							части города.
+						</p>
 				
 						<p class="about__paragraph">
 							<span class="about__paraspan">Каждый день мы стараемся создавать</span>
@@ -225,20 +233,24 @@
 					</div>
 					
 					<blockquote class="about__blockquotebox">
-						<p class="about__quote ">Game over &#8212;
-						<span class="about__subquote">это место незабываемых впечатлений</span>
-						</p>
-					<div class="about__blockquote">
+						<p class="about__quote ">Game over &#8212; это место незабываемых впечатлений</p>
+						<div class="about__blockquote">
 						<p class="about__refer"><cite class="about__cite">Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
 					</div>	
 					</blockquote>
+						
+				</div>
+				<div class="about--stels">
+					<p class="about__quote ">Game over &#8212; это место незабываемых впечатлений</p>
+					<div class="about__blockquote">
+					<p class="about__refer"><cite class="about__cite">Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
+				</div>	
 				</div>
 			</div>
 			
 			</div>
 		</section>
-		
-		<section class="reviews" id="feedback">
+		<section class="reviews" id="feedback"> 
 			<div class="reviews__container">
 				<h2 class="page__title">Отзывы посетителей</h2>
 				<div class="reviews__wrapper">
@@ -279,7 +291,7 @@
 	
 			</div>
 		</section>
-	
+ 	
 		<section class="questions">
 			<div class="container">
 				<h2 class="page__title">Частые вопросы</h2>
@@ -292,16 +304,16 @@
 				</ul>
 			</div>
 		</section>
-	</main>
+	</main> 
 
 	<footer class="footer" id="contact">
-		<div class="container">
-			<h2 class="page__title">Контакты</h2>
+		<div class="container footer__container">
+			<h2 class="page__title page__title--reset--padding">Контакты</h2>
 			<div class="footer-box">
 				<div class="footer-box__text">
 					<address class="footer__contacts">
 						<p class="footer__contact footer__contact_type_address">г.Москва 
-						ул. Аквамарина, 16
+					<span class="footer--mode--adaptive">	ул. Усачёва, 29 к3</span>
 						</p>
 						<p class="footer__contact footer__contact_type_phone"><a class="footer__link" href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
 						<p class="footer__contact footer__contact_type_email"><a class="footer__link" href="mailto:GameOver@gmail.com&body=привет">GameOver@gmail.com</a></p>
@@ -352,9 +364,8 @@
 				</p>
 			</div>
 		</div>
-	</footer>
-	
-		
+	</footer> 
+
 
 </body>
-</html>
+</html> 

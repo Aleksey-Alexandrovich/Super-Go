@@ -5,6 +5,7 @@
   padding: 20px 70px;
   margin-bottom: 20px;
   line-height: 46px;
+	position: relative;
 	
 }
 
@@ -15,18 +16,19 @@
 
 }
 
-.questions__list .questions__item:nth-child(even) {
-  color: white;
-  background-color: var(--main-color);
-}
 
-
-
-
-.questions__list .questions__item:nth-child(odd) {
+.questions__list .questions__item {
   color: black;
   background-color: white;
 }
+
+.questions__list .questions__item:hover{
+	color: white;
+  background-color: var(--main-color);
+
+}
+
+
 
 .questions__item::after {
   content: "";
@@ -38,7 +40,7 @@
 	transition-property: background;
 }
 
-.questions__item:nth-child(even):after {
+/* .questions__item:nth-child(even):after {
   background-image: url("../img/icon/whitecircle.svg");
 }
 
@@ -48,7 +50,7 @@
 
 .questions__item:nth-child(even):active::after {
   background-image: url("../img/icon/closeclose.svg");
-}
+} */
 
 
 .questions__item:hover {
@@ -56,10 +58,16 @@
 }
 
 
-.questions__item:nth-child(odd):after {
+.questions__item::after {
   background-image: url("../img/icon/open-purple.svg");
 }
 
+.questions__item:hover::after {
+	background-image: url("../img/icon/whitecircle.svg");
+}
+
+
+/* 
 .questions__item:nth-child(odd):hover::after {
 	background-image: url("../img/icon/ggg.svg");
 	
@@ -68,5 +76,44 @@
 .questions__item:nth-child(odd):active::after {
 	background-image: url("../img/icon/deeppurclose.svg");
 	
+} */
+
+@media(max-width:1240px) {
+	.questions__list .questions__item {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 16px;
+		padding: 23px 68px 23px 25px;
+
+	}
+
+	.questions__item::after {
+		position:absolute;
+		right: 20px;
+    bottom: 12px;
+
+	}
+
 }
 
+@media(max-width:740px) {
+	.questions__list .questions__item {
+		font-size: 12px;
+		line-height: 16px;
+    margin-bottom: 16px;
+    padding: 7px 43px 7px 10px;
+		min-height: 46px;
+}
+
+.questions__item::after {
+	background-image: url("../img/icon/superopen.svg") no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+  right: 17px;  
+  bottom: 8px;
+
+}
+
+
+}

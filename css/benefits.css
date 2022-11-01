@@ -8,6 +8,7 @@
 	min-height: 708px;
 }
 
+
 .benefits__link{
 	font-weight: 700;
 	font-size: 20px;
@@ -22,7 +23,7 @@
 }
 
 .benefits__item{
-	flex-basis: 380px;
+	width: 380px;
 	max-height: 228px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -71,4 +72,120 @@
 }
 .benefits__item--theme--games {
 	background-image: url("../img/figure/game.png");
+}
+
+.page__title--adaptive {
+	padding-top: 100px;
+}
+
+
+
+@media(max-width:1240px) {
+
+
+
+	
+	.page__title {
+		font-size: 30px;
+		line-height: 40px;
+		
+	}
+
+	.page__title--adaptive {
+		margin-bottom: 36px;
+	}
+
+	.benefits__item {
+		width: 287px;
+		max-height: 172px;
+		padding: 114px 20px 30px 20px;
+
+	}
+	.benefits__row {
+		gap: 30px 22px;
+		
+	
+		
+	}
+
+
+ 	.benefits__link--film {
+		position: relative;
+    bottom: 35px;
+
+	}
+
+	.benefits {
+		min-height: 542px;
+	}
+
+	
+}
+
+
+
+
+@media(max-width: 992px) {
+	.benefits__row {
+		flex-wrap: wrap;
+		max-width: 748px;
+		margin: 0 auto;
+		gap: 20px;
+		justify-content: center;
+	}
+
+	.benefits__item--theme--audio {
+		position: unset;
+		bottom: unset;
+	}
+
+
+
+
+	.benefits__item--theme--cinema {
+		position: unset;
+		bottom: unset;
+
+	}
+
+
+}
+
+
+
+@media(max-width: 740px) {
+	.page__title {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.benefits__item {
+		
+		width: 135px;
+    max-height: 75px;
+    padding: 30px 10px 30px 10px;
+
+
+	}
+
+	.benefits__link {
+		font-size: 10px;
+		line-height: 14px;
+	}
+
+	.benefits__row {
+		flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+	}
+
+
+	.page__title--adaptive{
+		padding-top: unset;
+	}
+
+	.benefits {
+		min-height: unset;
+	}
 }

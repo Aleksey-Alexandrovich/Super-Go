@@ -4,7 +4,11 @@
 	line-height: 28px;
 	color: #FFFFFF;
 }
-
+ 
+.about--stels {
+	opacity: 0;
+	height: 0;
+}
 
 .about__paragraph:not(:last-child) {
 	margin-bottom: 30px;
@@ -22,10 +26,9 @@
 	color: #FFFFFF;
 	position: relative;
 	padding-left: 44px;
+	max-width: 444px;
 }
-.about__subquote {
-	display: inline-block;
-}
+
 
 .about__quote::before {
 	content:"“";
@@ -48,8 +51,8 @@
 	line-height: 50px;
 	color: #6C0287;
 	position: absolute;
-	right: 98px;
-	bottom: 0;
+	right: 43px;
+  bottom: 0;
 	
 }  
 
@@ -57,8 +60,15 @@
 	position: relative;
 }
 
+.about__blockquotebox {
+	
+	max-width: 500px;
+	
+}
+
 .about__blockquote {
 	padding-left: 120px;
+
 }
 
 .about__cite {
@@ -85,17 +95,211 @@
 
 .about__text {
 	margin-bottom: 48px;
+	max-width: 500px;
 	
 }
 
-.about__contenttext {
-	display: inline-block;
-	max-width: 500px;
 
+
+.about__contentbox {
+	max-width: 1240px;
+	display: flex;
+	flex-wrap: wrap;
 }
+
+
 
 .about__contentimg {
 	margin-right: 80px;
 	cursor: pointer;
-	float: left;
 }
+
+@media(max-width:1240px) {
+	.about__paragraph {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.about__contentimg  {
+		width: 420.46px;
+		height: 417.66px;
+		margin-right: 0;
+
+	}
+
+	.about__contentbox {
+	
+		gap: 39.5px;
+	}
+
+	.about__image {
+		object-fit: cover;
+		width: 100%;
+	}
+
+	.about__contenttext {
+		max-width: 444px;
+	}
+
+	.about__quote {
+    margin-bottom: 13px;
+		font-size: 30px;
+		line-height: 36px;
+    padding-left: 24px;
+		max-width: 400px;
+}
+
+	.about__text {
+		margin-bottom: 26px;
+	}
+
+	.about__quote::before {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.about__quote::after {
+		font-size: 30px;
+		line-height: 36px;
+		right: 131px;
+	}
+
+
+
+	.about__cite {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.about__refer::before {
+		width: 70px;
+		height: 70px;
+		margin-right: 35px;
+	}
+
+}
+
+@media(max-width: 992px) {
+
+	.about__image {
+		object-fit: cover;
+	}
+
+	.about__contentimg {
+		max-width: 382px;
+		min-height: 380px;
+	}
+	.about__paragraph {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+
+	.about__blockquotebox {
+		display: none;
+	}
+
+	.about--stels {
+		opacity: 1;
+		max-width: 698px;
+		height: 100%;
+	}
+
+	.about__contentbox {
+		justify-content: center;
+    gap: 28px;
+    align-items: center;
+
+
+	}
+
+	.about__quote {
+		max-width: 688px;
+		font-size: 32px;
+	}
+
+	.about__text {
+		max-width: 278px;
+	}
+
+	.about__blockquote {
+		max-width: 440px;
+		float: right;
+		
+	}
+
+
+}
+
+
+
+@media(max-width:740px) {
+	.page__title {
+		margin-bottom: 15px;
+	}
+
+	.about__text {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.about__contentimg {
+		max-width: 280px;
+  	min-height: 280px;
+		height: unset;
+	}
+
+	.about__contenttext {
+		order:-1;
+	}
+
+	.about__paragraph {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.about__paragraph:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.about__quote {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.about__quote::after,
+	.about__quote::before {
+		font-size: 22px;
+	}
+
+	.about__quote::after {
+		bottom: -7px;
+    right: 106px
+	}
+
+	.about__blockquote {
+		float: unset;
+	}
+
+	.about__blockquote {
+		padding-left: unset;
+	}
+
+	.about__refer::before {
+		margin-right: 11px;
+	}
+
+	.about__cite {
+		font-size: 12px;
+		line-height: 16px;
+		max-width: 238px;
+    display: block;
+		
+		
+	}
+
+
+}
+
+
+
